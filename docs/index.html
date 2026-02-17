@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Ben Matthews, Josiah King and Jamie Buchan">
-  <meta name="dcterms.date" content="2025-08-27">
+  <meta name="dcterms.date" content="2026-02-24">
   <title>Why is Scotland’s reconviction rate falling?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -162,16 +162,15 @@ Ben Matthews, Josiah King and Jamie Buchan
     </div>
 </div>
 
-  <p class="date">August 27, 2025</p>
+  <p class="date">February 24, 2026</p>
 </section>
 <section id="overview" class="slide level2">
 <h2>Overview</h2>
 <ul>
-<li>The crime drop has changed the demographics of people being convicted</li>
-<li>Changing demographics of people convicted complicates comparisons in the aggregate reconviction rate over time</li>
+<li>There has been a big change in the demographics of people being convicted in Scotland over the past ~25 years</li>
+<li>Changing demographics complicates comparisons in the aggregate reconviction rate over time</li>
 <li>The overall change in the reconvictions rate in Scotland is partly due to less reconvictions and partly due to changing demographics</li>
 <li>This creates statistical bias in the aggregate reconviction rate if it’s used as a measure of ‘effectiveness’ of the justice system, an example of a statistical phenomenon known as the ‘amalgamation paradox’</li>
-<li>We demonstrate this problem with a worked example using Scottish reconvictions data</li>
 </ul>
 </section>
 <section>
@@ -179,10 +178,6 @@ Ben Matthews, Josiah King and Jamie Buchan
 <h1>Part One: The crime drop in Scotland</h1>
 
 </section>
-<section id="fewer-people-are-being-convicted" class="slide level2">
-<h2>Fewer people are being convicted</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="the-overall-reconviction-rate-is-falling" class="slide level2">
 <h2>The overall reconviction rate is falling</h2>
 
@@ -190,15 +185,7 @@ Ben Matthews, Josiah King and Jamie Buchan
 <section id="the-demographics-of-convictions-are-changing" class="slide level2">
 <h2>The demographics of convictions are changing</h2>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
-<section id="a-gap-in-the-crime-drop" class="slide level2">
-<h2>A gap in the crime drop</h2>
-<ul>
-<li>There has been <em>a lot</em> written about the causes of the crime drop <span class="citation" data-cites="farrell2014 tonry2014 ball2023">(<a href="#/references" role="doc-biblioref" onclick="">Farrell, Tilley, and Tseloni 2014</a>; <a href="#/references" role="doc-biblioref" onclick="">Tonry 2014</a>; <a href="#/references" role="doc-biblioref" onclick="">Ball et al. 2023</a>)</span>, including previous attempts to describe changes in the demographics of crime and use these descriptions to build explanations for why there is less crime now than in the past <span class="citation" data-cites="matthewsRethinkingOneCriminologys2018 tuttleEndAgeCrimeCurve2024 farrellDebutsLegaciesCrime2015">(<a href="#/references" role="doc-biblioref" onclick="">Matthews and Minton 2018</a>; <a href="#/references" role="doc-biblioref" onclick="">Tuttle 2024</a>; <a href="#/references" role="doc-biblioref" onclick="">Farrell, Laycock, and Tilley 2015</a>)</span></li>
-<li>There haven’t - at least as far as I’m aware - been any studies which go on to explore the <em>consequences</em> of these changing demographics for the justice system more broadly</li>
-<li>One area these changing demographics can matter are when measuring CJS ‘performance’</li>
-</ul>
-</section></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="part-two-measuring-performance" class="title-slide slide level1 center" data-background-color="#006938">
 <h1>Part Two: Measuring ‘Performance’</h1>
@@ -230,29 +217,6 @@ Ben Matthews, Josiah King and Jamie Buchan
 <blockquote>
 <p>“If the target for a reduction in the overall reconviction rate is met, and this is mainly due to more people with a lower likelihood of re-offending being brought into the criminal justice system and being convicted, rather than through a reduction in rates of re-offending among those who would normally be brought into the system, this would bring little cause for celebration.” <span class="citation" data-cites="kirkwood2008">(<a href="#/references" role="doc-biblioref" onclick="">Kirkwood 2008, p9</a>)</span></p>
 </blockquote>
-</section>
-<section id="standardized-reconviction-rates-as-performance-indicators" class="slide level2">
-<h2>Standardized reconviction rates as performance indicators</h2>
-<ul>
-<li><p>This compositional problem is well known, and typically what people do is come up with some counterfactual ‘standardized’ reconviction rate to facilitate comparisons across years when measuring performance <span class="citation" data-cites="francis2005 cunliffe2007 drake2010">(<a href="#/references" role="doc-biblioref" onclick="">Francis, Harman, and Humphreys 2005</a>; <a href="#/references" role="doc-biblioref" onclick="">Cunliffe and Shepherd 2007</a>; <a href="#/references" role="doc-biblioref" onclick="">Drake, Aos, and Barnoski 2010</a>)</span> to correct for the problem of changing ‘offender mix’</p></li>
-<li><p>These methods typically focus on whether the observed reconviction rate is higher or lower than the standardized (read: made up with maths) rate</p></li>
-<li><p>These methods do not directly assess the drivers of any change in the observed rate - specifically the relative importance of demographic changes and change in ‘sub-group’ reconviction rates in producing change in the aggregate rate</p></li>
-<li><p>To date, no studies have assessed the extent to which these long-term demographic changes as reflected in the crime drop can influence aggregate performance measures</p></li>
-</ul>
-</section></section>
-<section>
-<section id="part-three-an-alternative-approach" class="title-slide slide level1 center" data-background-color="#006938">
-<h1>Part Three: An alternative approach</h1>
-
-</section>
-<section id="standardization-and-decomposition" class="slide level2">
-<h2>Standardization and decomposition</h2>
-<ul>
-<li>The methods of standardization and decomposition can separate out changes in the reconviction rate that are due to demographic change from those due to change in the underlying reconviction rate for different age groups</li>
-<li>Standardization and decomposition can also separate out the relative importance of different factors in driving aggregate change (e.g.&nbsp;age and sex)</li>
-<li>Previous regression-based approaches <span class="citation" data-cites="francis2005 cunliffe2007 drake2010">(<a href="#/references" role="doc-biblioref" onclick="">Francis, Harman, and Humphreys 2005</a>; <a href="#/references" role="doc-biblioref" onclick="">Cunliffe and Shepherd 2007</a>; <a href="#/references" role="doc-biblioref" onclick="">Drake, Aos, and Barnoski 2010</a>)</span> to correct for the problem of changing ‘offender mix’ can perform this standardization part, but don’t focus on the decomposition part</li>
-<li>We illustrate this approach using the standardization and decomposition methods described by <span class="citation" data-cites="dasguptaStandardizationDecompositionRates1993">(<a href="#/references" role="doc-biblioref" onclick="">Das Gupta 1993</a>)</span> and implemented in the <code>{dasguptr}</code> R package <span class="citation" data-cites="king2025">(<a href="#/references" role="doc-biblioref" onclick="">King and Matthews 2025</a>)</span> to Scottish reconvictions data from 1997-2022</li>
-</ul>
 </section></section>
 <section>
 <section id="research-design" class="title-slide slide level1 center" data-background-color="#006938">
@@ -297,6 +261,7 @@ Ben Matthews, Josiah King and Jamie Buchan
 <ul>
 <li><p>The <span class="citation" data-cites="dasguptaStandardizationDecompositionRates1993">Das Gupta (<a href="#/references" role="doc-biblioref" onclick="">1993</a>)</span> approach to standardization and decomposition calculates what the reconviction rate ‘would have been’ in each comparison year if each year had the average demographic composition</p></li>
 <li><p>The differences between these ‘standardized’ rates to the observed rates are then used to calculate how much of the change in the observed rate is due to changes in the underlying reconviction rates for each age group, and how much is due to the change in the mix of the age groups</p></li>
+<li><p>We use an implementation of standardization and decomposition <span class="citation" data-cites="dasguptaStandardizationDecompositionRates1993">(<a href="#/references" role="doc-biblioref" onclick="">Das Gupta 1993</a>)</span> and implemented in the <code>{dasguptr}</code> R package <span class="citation" data-cites="king2025">(<a href="#/references" role="doc-biblioref" onclick="">King and Matthews 2025</a>)</span></p></li>
 </ul>
 </section></section>
 <section>
@@ -316,23 +281,23 @@ Ben Matthews, Josiah King and Jamie Buchan
 <h2>How much change in the reconviction rate is due to demographic mix?</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="xqzazqbklq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xqzazqbklq table {
+<div id="rysrupjcge" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rysrupjcge table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xqzazqbklq thead, #xqzazqbklq tbody, #xqzazqbklq tfoot, #xqzazqbklq tr, #xqzazqbklq td, #xqzazqbklq th {
+#rysrupjcge thead, #rysrupjcge tbody, #rysrupjcge tfoot, #rysrupjcge tr, #rysrupjcge td, #rysrupjcge th {
   border-style: none;
 }
 
-#xqzazqbklq p {
+#rysrupjcge p {
   margin: 0;
   padding: 0;
 }
 
-#xqzazqbklq .gt_table {
+#rysrupjcge .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -358,12 +323,12 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-left-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_caption {
+#rysrupjcge .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xqzazqbklq .gt_title {
+#rysrupjcge .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -375,7 +340,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-width: 0;
 }
 
-#xqzazqbklq .gt_subtitle {
+#rysrupjcge .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -387,7 +352,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-top-width: 0;
 }
 
-#xqzazqbklq .gt_heading {
+#rysrupjcge .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -399,13 +364,13 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_bottom_border {
+#rysrupjcge .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_col_headings {
+#rysrupjcge .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -420,7 +385,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_col_heading {
+#rysrupjcge .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -440,7 +405,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   overflow-x: hidden;
 }
 
-#xqzazqbklq .gt_column_spanner_outer {
+#rysrupjcge .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -452,15 +417,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 4px;
 }
 
-#xqzazqbklq .gt_column_spanner_outer:first-child {
+#rysrupjcge .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xqzazqbklq .gt_column_spanner_outer:last-child {
+#rysrupjcge .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xqzazqbklq .gt_column_spanner {
+#rysrupjcge .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -472,11 +437,11 @@ Ben Matthews, Josiah King and Jamie Buchan
   width: 100%;
 }
 
-#xqzazqbklq .gt_spanner_row {
+#rysrupjcge .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xqzazqbklq .gt_group_heading {
+#rysrupjcge .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -502,7 +467,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   text-align: left;
 }
 
-#xqzazqbklq .gt_empty_group_heading {
+#rysrupjcge .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -517,15 +482,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   vertical-align: middle;
 }
 
-#xqzazqbklq .gt_from_md > :first-child {
+#rysrupjcge .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xqzazqbklq .gt_from_md > :last-child {
+#rysrupjcge .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xqzazqbklq .gt_row {
+#rysrupjcge .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -544,7 +509,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   overflow-x: hidden;
 }
 
-#xqzazqbklq .gt_stub {
+#rysrupjcge .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -557,7 +522,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#xqzazqbklq .gt_stub_row_group {
+#rysrupjcge .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -571,15 +536,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   vertical-align: top;
 }
 
-#xqzazqbklq .gt_row_group_first td {
+#rysrupjcge .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xqzazqbklq .gt_row_group_first th {
+#rysrupjcge .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xqzazqbklq .gt_summary_row {
+#rysrupjcge .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -589,16 +554,16 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#xqzazqbklq .gt_first_summary_row {
+#rysrupjcge .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_first_summary_row.thick {
+#rysrupjcge .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xqzazqbklq .gt_last_summary_row {
+#rysrupjcge .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -608,7 +573,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_grand_summary_row {
+#rysrupjcge .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -618,7 +583,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#xqzazqbklq .gt_first_grand_summary_row {
+#rysrupjcge .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -628,7 +593,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-top-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_last_grand_summary_row_top {
+#rysrupjcge .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -638,11 +603,11 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_striped {
+#rysrupjcge .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xqzazqbklq .gt_table_body {
+#rysrupjcge .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -651,7 +616,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_footnotes {
+#rysrupjcge .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -665,7 +630,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_footnote {
+#rysrupjcge .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -674,7 +639,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#xqzazqbklq .gt_sourcenotes {
+#rysrupjcge .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -688,7 +653,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#xqzazqbklq .gt_sourcenote {
+#rysrupjcge .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -696,72 +661,72 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#xqzazqbklq .gt_left {
+#rysrupjcge .gt_left {
   text-align: left;
 }
 
-#xqzazqbklq .gt_center {
+#rysrupjcge .gt_center {
   text-align: center;
 }
 
-#xqzazqbklq .gt_right {
+#rysrupjcge .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xqzazqbklq .gt_font_normal {
+#rysrupjcge .gt_font_normal {
   font-weight: normal;
 }
 
-#xqzazqbklq .gt_font_bold {
+#rysrupjcge .gt_font_bold {
   font-weight: bold;
 }
 
-#xqzazqbklq .gt_font_italic {
+#rysrupjcge .gt_font_italic {
   font-style: italic;
 }
 
-#xqzazqbklq .gt_super {
+#rysrupjcge .gt_super {
   font-size: 65%;
 }
 
-#xqzazqbklq .gt_footnote_marks {
+#rysrupjcge .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xqzazqbklq .gt_asterisk {
+#rysrupjcge .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xqzazqbklq .gt_indent_1 {
+#rysrupjcge .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xqzazqbklq .gt_indent_2 {
+#rysrupjcge .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xqzazqbklq .gt_indent_3 {
+#rysrupjcge .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xqzazqbklq .gt_indent_4 {
+#rysrupjcge .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xqzazqbklq .gt_indent_5 {
+#rysrupjcge .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xqzazqbklq .katex-display {
+#rysrupjcge .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xqzazqbklq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rysrupjcge div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -820,8 +785,8 @@ Reconviction cohort
 <td class="gt_row gt_right" headers="stub_1_4 diff">-0.05</td>
 <td class="gt_row gt_right" headers="stub_1_4 decomp">100.00</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="5" class="gt_sourcenote">Data from Scottish Government (2024). Calculations authors' own.</td>
 </tr>
 </tfoot>
@@ -835,10 +800,10 @@ Reconviction cohort
 <section id="analysis" class="slide level2">
 <h2>Analysis</h2>
 <ul>
-<li>The dramatic changes in the demographics of people involved in the justice system that we have seen in Scotland distorts simple comparisons over time in aggregate performance measures such as the reconviction rate, because the people who make up reconviction cohorts in the early 2000s have a very different profile to those who make up reconvictions cohorts in the mid 2020s</li>
+<li>The dramatic changes in the demographics of people involved in the justice system that we have seen in Scotland distorts simple comparisons over time in aggregate performance measures such as the reconviction rate, because the people who made up reconviction cohorts in the late 1990s have a very different demographic profile to those who make up reconvictions cohorts in the mid 2020s</li>
 <li>Young people used to have the highest reconviction rate of all age groups, but this is has fallen</li>
 <li>Those over 40 have consistently lower reconviction rates, but these have not fallen</li>
-<li>Young people also used to make up more of the reconviction cohorts</li>
+<li>Young people also used to make up <em>more</em> of the reconviction cohorts</li>
 <li>In terms of the overall reconviction rate, a group of people with high levels of reconviction have been replaced by people with lower levels of reconviction</li>
 </ul>
 </section>
@@ -886,9 +851,9 @@ Reconviction cohort
 <section id="reconviction-rates-for-each-group" class="slide level2">
 <h2>Reconviction rates for each group</h2>
 <ul>
-<li>Suggesting that policy-makers/whoever analyse trends for all groups runs counter to the logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an ‘objective’ and apolitical measure <span class="citation" data-cites="porter1996">(<a href="#/references" role="doc-biblioref" onclick="">Porter 1996</a>)</span></li>
+<li>Having ten rather than one performance measure goes against logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an ‘objective’ and apolitical measure <span class="citation" data-cites="porter1996">(<a href="#/references" role="doc-biblioref" onclick="">Porter 1996</a>)</span></li>
 <li>Requiring reconviction rates for pre-defined population groups raises the question of which groups would make the cut, and how they would be defined</li>
-<li>This is famously the paradoxical bit of Simpson’s paradox - the hard part is identifying the subgroups you need to stratify by <span class="citation" data-cites="pearl2014">(<a href="#/references" role="doc-biblioref" onclick="">Pearl 2014</a>)</span>; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical</li>
+<li>This is the paradoxical bit of Simpson’s paradox - the hard part is identifying the subgroups you need to stratify by <span class="citation" data-cites="pearl2014">(<a href="#/references" role="doc-biblioref" onclick="">Pearl 2014</a>)</span>; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical</li>
 </ul>
 </section>
 <section id="following-consultation-with-key-users" class="slide level2">
@@ -907,6 +872,7 @@ Reconviction cohort
 <ul>
 <li>If you really want to use reconviction rates as a performance indicator, I would say that measuring reconviction rates for each group that you care about is probably preferable than coming up with a standardized measure</li>
 <li>It is useful information to know if there are groups who are not seeing the same overall decline in reconvictions and whether this is masked by the overall rate</li>
+<li>Your opinions welcome here!</li>
 </ul>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#006938">
@@ -927,6 +893,28 @@ Reconviction cohort
 <li>But this isn’t so relevant for our concerns here - the same statistical distortion would occur regardless of the outcome measure used<sup>1</sup></li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn2"><p>Making some assumptions that I’d be happy to discuss in the questions if people are interested!</p></li></ol></aside></section>
+<section id="standardized-reconviction-rates-as-performance-indicators" class="slide level2">
+<h2>Standardized reconviction rates as performance indicators</h2>
+<ul>
+<li><p>This compositional problem is well known, and typically what people do is come up with some counterfactual ‘standardized’ reconviction rate to facilitate comparisons across years when measuring performance <span class="citation" data-cites="francis2005 cunliffe2007 drake2010">(<a href="#/references" role="doc-biblioref" onclick="">Francis, Harman, and Humphreys 2005</a>; <a href="#/references" role="doc-biblioref" onclick="">Cunliffe and Shepherd 2007</a>; <a href="#/references" role="doc-biblioref" onclick="">Drake, Aos, and Barnoski 2010</a>)</span> to correct for the problem of changing ‘offender mix’</p></li>
+<li><p>These methods typically focus on whether the observed reconviction rate is higher or lower than the standardized (read: made up with maths) rate</p></li>
+<li><p>These methods do not directly assess the drivers of any change in the observed rate - specifically the relative importance of demographic changes and change in ‘sub-group’ reconviction rates in producing change in the aggregate rate</p></li>
+<li><p>To date, no studies have assessed the extent to which these long-term demographic changes as reflected in the crime drop can influence aggregate performance measures</p></li>
+</ul>
+</section></section>
+<section>
+<section id="part-three-an-alternative-approach" class="title-slide slide level1 center" data-background-color="#006938">
+<h1>Part Three: An alternative approach</h1>
+
+</section>
+<section id="standardization-and-decomposition" class="slide level2">
+<h2>Standardization and decomposition</h2>
+<ul>
+<li>The methods of standardization and decomposition can separate out changes in the reconviction rate that are due to demographic change from those due to change in the underlying reconviction rate for different age groups</li>
+<li>Standardization and decomposition can also separate out the relative importance of different factors in driving aggregate change (e.g.&nbsp;age and sex)</li>
+<li>Previous regression-based approaches <span class="citation" data-cites="francis2005 cunliffe2007 drake2010">(<a href="#/references" role="doc-biblioref" onclick="">Francis, Harman, and Humphreys 2005</a>; <a href="#/references" role="doc-biblioref" onclick="">Cunliffe and Shepherd 2007</a>; <a href="#/references" role="doc-biblioref" onclick="">Drake, Aos, and Barnoski 2010</a>)</span> to correct for the problem of changing ‘offender mix’ can perform this standardization part, but don’t focus on the decomposition part</li>
+</ul>
+</section>
 <section id="effect-of-comparison-year" class="slide level2">
 <h2>Effect of comparison year</h2>
 
@@ -952,12 +940,6 @@ Das Gupta, Prithwis. 1993. <em>Standardization and Decomposition of Rates: A Use
 <div id="ref-drake2010" class="csl-entry" role="listitem">
 Drake, E. K., S. Aos, and R. Barnoski. 2010. <span>“Washington’s <span>Offender Accountability Act</span>: <span>Final Report</span> on <span>Recidivism Outcomes</span>.”</span> Olympia: Washington State Institute for Public Policy.
 </div>
-<div id="ref-farrellDebutsLegaciesCrime2015" class="csl-entry" role="listitem">
-Farrell, Graham, Gloria Laycock, and Nick Tilley. 2015. <span>“Debuts and Legacies: The Crime Drop and the Role of Adolescence-Limited and Persistent Offending.”</span> <em>Crime Science</em> 4 (1). <a href="https://doi.org/10.1186/s40163-015-0028-3">https://doi.org/10.1186/s40163-015-0028-3</a>.
-</div>
-<div id="ref-farrell2014" class="csl-entry" role="listitem">
-Farrell, Graham, Nick Tilley, and Andromachi Tseloni. 2014. <span>“Why the Crime Drop?”</span> <em>Crime and Justice</em> 43 (1): 421490. <a href="http://www.journals.uchicago.edu/doi/abs/10.1086/678081">http://www.journals.uchicago.edu/doi/abs/10.1086/678081</a>.
-</div>
 <div id="ref-francis2005" class="csl-entry" role="listitem">
 Francis, Brian, Juliet Harman, and Leslie Humphreys. 2005. <span>“Predicting Reconviction Rates in Northern Ireland.”</span> <a href="https://eprints.lancs.ac.uk/id/eprint/49993/1/francis_predicting_reconviction_rates_in_northern_ireland_7_2005.pdf">https://eprints.lancs.ac.uk/id/eprint/49993/1/francis_predicting_reconviction_rates_in_northern_ireland_7_2005.pdf</a>.
 </div>
@@ -982,9 +964,6 @@ Maruna, Shadd. 2025. <span>“Redeeming Desistance: <span>From</span> Individual
 <div id="ref-matthews2023" class="csl-entry" role="listitem">
 Matthews, Ben. 2023. <span>“The Age-Crime Curve and the Crime Drop in (Some of) Northern Europe,”</span> June. <a href="https://benmatthewsed.github.io/age_crime_curve_europe/age_crime_curve_europe.html#/title-slide">https://benmatthewsed.github.io/age_crime_curve_europe/age_crime_curve_europe.html#/title-slide</a>.
 </div>
-<div id="ref-matthewsRethinkingOneCriminologys2018" class="csl-entry" role="listitem">
-Matthews, Ben, and Jon Minton. 2018. <span>“Rethinking One of Criminology’s <span>‘Brute Facts’</span>: <span>The</span> Age–Crime Curve and the Crime Drop in <span>Scotland</span>.”</span> <em>European Journal of Criminology</em> 15 (3): 296–320. <a href="https://doi.org/10.1177/1477370817731706">https://doi.org/10.1177/1477370817731706</a>.
-</div>
 <div id="ref-pearl2014" class="csl-entry" role="listitem">
 Pearl, Judea. 2014. <span>“Comment: <span>Understanding Simpson</span>’s <span>Paradox</span>.”</span> <em>The American Statistician</em> 68 (1): 8–13. <a href="https://www.jstor.org/stable/24591584">https://www.jstor.org/stable/24591584</a>.
 </div>
@@ -996,12 +975,6 @@ Scottish Government. 2024. <span>“Reconviction <span>Rates</span> in <span>Sco
 </div>
 <div id="ref-simpson1951" class="csl-entry" role="listitem">
 Simpson, E. H. 1951. <span>“The <span>Interpretation</span> of <span>Interaction</span> in <span>Contingency Tables</span>.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 13 (2): 238–41. <a href="https://doi.org/10.1111/j.2517-6161.1951.tb00088.x">https://doi.org/10.1111/j.2517-6161.1951.tb00088.x</a>.
-</div>
-<div id="ref-tonry2014" class="csl-entry" role="listitem">
-Tonry, Michael. 2014. <span>“Why Crime Rates Are Falling Throughout the Western World.”</span> <em>Crime and Justice</em> 43 (1): 163. <a href="http://www.journals.uchicago.edu/doi/abs/10.1086/678181">http://www.journals.uchicago.edu/doi/abs/10.1086/678181</a>.
-</div>
-<div id="ref-tuttleEndAgeCrimeCurve2024" class="csl-entry" role="listitem">
-Tuttle, James. 2024. <span>“The <span>End</span> of the <span>Age-Crime Curve</span>? <span>A Historical Comparison</span> of <span>Male Arrest Rates</span> in the <span>United States</span>, 1985–2019.”</span> <em>The British Journal of Criminology</em> 64 (3): 638–55. <a href="https://doi.org/10.1093/bjc/azad049">https://doi.org/10.1093/bjc/azad049</a>.
 </div>
 <div id="ref-weaverUnderstandingDesistanceCritical2019" class="csl-entry" role="listitem">
 Weaver, Beth. 2019. <span>“Understanding Desistance: A Critical Review of Theories of Desistance.”</span> <em>Psychology, Crime &amp; Law</em> 25 (6): 641–58. <a href="https://doi.org/10.1080/1068316X.2018.1560444">https://doi.org/10.1080/1068316X.2018.1560444</a>.
