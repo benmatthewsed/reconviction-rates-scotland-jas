@@ -19,15 +19,14 @@ bibliography: references.bib
 
 ## Overview
 
--   The crime drop has changed the demographics of people being convicted
--   Changing demographics of people convicted complicates comparisons in the aggregate reconviction rate over time
+-   There has been a big change in the demographics of people being convicted in Scotland over the past ~25 years
+-   Changing demographics complicates comparisons in the aggregate reconviction rate over time
 -   The overall change in the reconvictions rate in Scotland is partly due to less reconvictions and partly due to changing demographics
 -   This creates statistical bias in the aggregate reconviction rate if it's used as a measure of 'effectiveness' of the justice system, an example of a statistical phenomenon known as the 'amalgamation paradox'
--   We demonstrate this problem with a worked example using Scottish reconvictions data
+
 
 # Part One: The crime drop in Scotland {background-color="#006938"}
 
-## Fewer people are being convicted
 
 ```{r warnings=FALSE}
 library(tidyverse)
@@ -40,19 +39,6 @@ library(patchwork)
 
 scot_reconv <- readRDS(here::here("01_data", "combined_reconvictions.rds"))
 
-scot_reconv |> 
-  group_by(year) |> 
-  summarise(n = sum(number_of_offenders)) |> 
-  ggplot(aes(x = year, group = 1, y = n)) +
-  geom_line() +
-  theme_minimal() +
-  geom_line(linewidth = 1.5,
-            alpha = 0.9,
-            colour = "#006938") +
-  labs(y = "Size of reconviction cohorts",
-       x = "Year",
-       caption = "Source: Scottish Government (2013; 2024)") +
-  theme(axis.text.x = element_text(angle = 45, hjust=1))
 ```
 
 ## The overall reconviction rate is falling
@@ -132,7 +118,7 @@ scot_reconv |>
   scale_color_manual(values = stir_palette) +
   scale_fill_manual(values = stir_palette) +
   theme_minimal() +
-  labs(y = "Proportion of reconviction cohort",
+  labs(y = "Number of people in reconviction cohort",
        x = "Reconviction cohort",
        colour = "Age",
        fill = "Age") +
@@ -164,11 +150,6 @@ n_plot + prop_plot
 
 ```
 
-## A gap in the crime drop
-
--   There has been *a lot* written about the causes of the crime drop [@farrell2014; @tonry2014; @ball2023], including previous attempts to describe changes in the demographics of crime and use these descriptions to build explanations for why there is less crime now than in the past [@matthewsRethinkingOneCriminologys2018; @tuttleEndAgeCrimeCurve2024; @farrellDebutsLegaciesCrime2015]
--   There haven't - at least as far as I'm aware - been any studies which go on to explore the *consequences* of these changing demographics for the justice system more broadly
--   One area these changing demographics can matter are when measuring CJS 'performance'
 
 # Part Two: Measuring 'Performance' {background-color="#006938"}
 
@@ -196,25 +177,6 @@ n_plot + prop_plot
 -   But change in the overall rate can come from either changes in the subgroup rates *or changes in the relative subgroup sizes*
 
 > "If the target for a reduction in the overall reconviction rate is met, and this is mainly due to more people with a lower likelihood of re-offending being brought into the criminal justice system and being convicted, rather than through a reduction in rates of re-offending among those who would normally be brought into the system, this would bring little cause for celebration." [@kirkwood2008, p9]
-
-## Standardized reconviction rates as performance indicators
-
--   This compositional problem is well known, and typically what people do is come up with some counterfactual 'standardized' reconviction rate to facilitate comparisons across years when measuring performance [@francis2005; @cunliffe2007; @drake2010] to correct for the problem of changing 'offender mix'
-
--   These methods typically focus on whether the observed reconviction rate is higher or lower than the standardized (read: made up with maths) rate
-
--   These methods do not directly assess the drivers of any change in the observed rate - specifically the relative importance of demographic changes and change in 'sub-group' reconviction rates in producing change in the aggregate rate
-
--   To date, no studies have assessed the extent to which these long-term demographic changes as reflected in the crime drop can influence aggregate performance measures
-
-# Part Three: An alternative approach {background-color="#006938"}
-
-## Standardization and decomposition
-
--   The methods of standardization and decomposition can separate out changes in the reconviction rate that are due to demographic change from those due to change in the underlying reconviction rate for different age groups
--   Standardization and decomposition can also separate out the relative importance of different factors in driving aggregate change (e.g. age and sex)
--   Previous regression-based approaches [@francis2005; @cunliffe2007; @drake2010] to correct for the problem of changing 'offender mix' can perform this standardization part, but don't focus on the decomposition part
--   We illustrate this approach using the standardization and decomposition methods described by [@dasguptaStandardizationDecompositionRates1993] and implemented in the `{dasguptr}` R package [@king2025] to Scottish reconvictions data from 1997-2022
 
 # Research design {background-color="#006938"}
 
@@ -254,6 +216,10 @@ Sex is "generally based on how a person presents and is recorded when a personâ€
 -   The @dasguptaStandardizationDecompositionRates1993 approach to standardization and decomposition calculates what the reconviction rate 'would have been' in each comparison year if each year had the average demographic composition
 
 -   The differences between these 'standardized' rates to the observed rates are then used to calculate how much of the change in the observed rate is due to changes in the underlying reconviction rates for each age group, and how much is due to the change in the mix of the age groups
+
+-   We use an implementation of standardization and decomposition [@dasguptaStandardizationDecompositionRates1993] and implemented in the `{dasguptr}` R package [@king2025]
+
+
 
 # Results {background-color="#006938"}
 
@@ -402,10 +368,10 @@ first_last_decomp |>
 
 ## Analysis
 
--   The dramatic changes in the demographics of people involved in the justice system that we have seen in Scotland distorts simple comparisons over time in aggregate performance measures such as the reconviction rate, because the people who make up reconviction cohorts in the early 2000s have a very different profile to those who make up reconvictions cohorts in the mid 2020s
+-   The dramatic changes in the demographics of people involved in the justice system that we have seen in Scotland distorts simple comparisons over time in aggregate performance measures such as the reconviction rate, because the people who made up reconviction cohorts in the late 1990s have a very different demographic profile to those who make up reconvictions cohorts in the mid 2020s
 -   Young people used to have the highest reconviction rate of all age groups, but this is has fallen
 -   Those over 40 have consistently lower reconviction rates, but these have not fallen
--   Young people also used to make up more of the reconviction cohorts
+-   Young people also used to make up *more* of the reconviction cohorts
 -   In terms of the overall reconviction rate, a group of people with high levels of reconviction have been replaced by people with lower levels of reconviction
 
 
@@ -446,9 +412,9 @@ first_last_decomp |>
 
 ## Reconviction rates for each group
 
--   Suggesting that policy-makers/whoever analyse trends for all groups runs counter to the logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an 'objective' and apolitical measure [@porter1996]
+-   Having ten rather than one performance measure goes against logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an 'objective' and apolitical measure [@porter1996]
 -   Requiring reconviction rates for pre-defined population groups raises the question of which groups would make the cut, and how they would be defined
--   This is famously the paradoxical bit of Simpson's paradox - the hard part is identifying the subgroups you need to stratify by [@pearl2014]; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical
+-   This is the paradoxical bit of Simpson's paradox - the hard part is identifying the subgroups you need to stratify by [@pearl2014]; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical
 
 ## "Following consultation with key users"
 
@@ -463,6 +429,7 @@ first_last_decomp |>
 
 -   If you really want to use reconviction rates as a performance indicator, I would say that measuring reconviction rates for each group that you care about is probably preferable than coming up with a standardized measure
 -   It is useful information to know if there are groups who are not seeing the same overall decline in reconvictions and whether this is masked by the overall rate
+- Your opinions welcome here!
 
 # Thank you! {background-color="#006938"}
 
@@ -475,6 +442,28 @@ first_last_decomp |>
 -   But this isn't so relevant for our concerns here - the same statistical distortion would occur regardless of the outcome measure used[^2] 
 
 [^2]: Making some assumptions that I'd be happy to discuss in the questions if people are interested!
+
+
+## Standardized reconviction rates as performance indicators
+
+-   This compositional problem is well known, and typically what people do is come up with some counterfactual 'standardized' reconviction rate to facilitate comparisons across years when measuring performance [@francis2005; @cunliffe2007; @drake2010] to correct for the problem of changing 'offender mix'
+
+-   These methods typically focus on whether the observed reconviction rate is higher or lower than the standardized (read: made up with maths) rate
+
+-   These methods do not directly assess the drivers of any change in the observed rate - specifically the relative importance of demographic changes and change in 'sub-group' reconviction rates in producing change in the aggregate rate
+
+-   To date, no studies have assessed the extent to which these long-term demographic changes as reflected in the crime drop can influence aggregate performance measures
+
+
+
+# Part Three: An alternative approach {background-color="#006938"}
+
+## Standardization and decomposition
+
+-   The methods of standardization and decomposition can separate out changes in the reconviction rate that are due to demographic change from those due to change in the underlying reconviction rate for different age groups
+-   Standardization and decomposition can also separate out the relative importance of different factors in driving aggregate change (e.g. age and sex)
+-   Previous regression-based approaches [@francis2005; @cunliffe2007; @drake2010] to correct for the problem of changing 'offender mix' can perform this standardization part, but don't focus on the decomposition part
+
 
 ## Effect of comparison year
 
