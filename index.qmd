@@ -441,7 +441,7 @@ first_last_decomp |>
 -   @klingeleMeasuringChange2019 advocates for measuring 'markers of desistance' instead of a binary reconviction measure, see @weaverUnderstandingDesistanceCritical2019 and @marunaRedeemingDesistanceIndividual2025 for more conceptual critiques)
 -   But this isn't so relevant for our concerns here - the same statistical distortion would occur regardless of the outcome measure used[^2] 
 
-[^2]: Making some assumptions that I'd be happy to discuss in the questions if people are interested!
+[^2]: Making some assumptions that I'd be happy to discuss in the questions if people are interested
 
 
 ## Standardized reconviction rates as performance indicators
