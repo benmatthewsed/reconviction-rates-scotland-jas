@@ -4,6 +4,14 @@ download.file(xls_url,
               destfile = here::here("01_data", "reconvictions-2020-21-offender-cohort-additional-datasets.xlsx"),
               method = "wget")
 
+
+reonv_2223_url <- "https://www.gov.scot/binaries/content/documents/govscot/publications/statistics/2024/12/criminal-proceedings-scotland-2022-23/documents/criminal-proceedings-scotland-2022-23-main-tables/criminal-proceedings-scotland-2022-23-main-tables/govscot%3Adocument/criminal-proceedings-scotland-2022-23-main-tables.xlsx"
+
+download.file(reonv_2223_url,
+              destfile = here::here("01_data", "reconvictions-2022-23-offender-cohort-main-tables.xlsx"),
+              mode = "wb")
+
+
 # older reconvictions
 
 reconv_1718_url <- "https://www.gov.scot/binaries/content/documents/govscot/publications/statistics/2020/10/reconviction-rates-scotland-2017-18-offender-cohort/documents/main-publication-tables/main-publication-tables/govscot%3Adocument/main-publication-tables.xlsx"

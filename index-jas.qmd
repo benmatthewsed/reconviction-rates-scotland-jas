@@ -4,7 +4,7 @@ title-slide-attributes:
     data-background-color: "#006938"
 author: "Ben Matthews, Josiah King and Jamie Buchan"
 institute: "University of Stirling | University of Edinburgh | Edinburgh Napier University"
-date: "27 August 2025"
+date: "24 February 2026"
 date-format: long
 format: 
   revealjs:

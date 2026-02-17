@@ -87,6 +87,18 @@ scot_1718 |>
   mutate(prevalence = reconviction_rate / 100) |> 
   select(year:number_of_offenders, prevalence, number_reconvicted)
 
+
+# add 2022-23 cohort
+
+
+read_xlsx(here::here("01_data", "reconvictions-2022-23-offender-cohort-main-tables.xlsx"),
+          sheet = "Table 5",
+          skip = 3) |> 
+  janitor::clean_names()
+
+
+
+
 # combining ---------------------------------------------------------------
 
 overall_res <- 
