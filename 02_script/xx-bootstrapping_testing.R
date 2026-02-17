@@ -504,7 +504,7 @@ tmp4 |>
                values_to = "rate") |> 
   filter(year == "1997-98") |> 
   group_by(rowname, year) |> 
-  summarise(confs = quantile(diff, c(0.025, 0.5, 0.975)))
+  summarise(confs = quantile(decomp, c(0.025, 0.5, 0.975)))
 
 
 

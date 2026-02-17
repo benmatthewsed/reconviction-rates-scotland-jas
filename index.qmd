@@ -217,7 +217,7 @@ Sex is "generally based on how a person presents and is recorded when a personâ€
 
 -   The differences between these 'standardized' rates to the observed rates are then used to calculate how much of the change in the observed rate is due to changes in the underlying reconviction rates for each age group, and how much is due to the change in the mix of the age groups
 
--   We use an implementation of standardization and decomposition [@dasguptaStandardizationDecompositionRates1993] and implemented in the `{dasguptr}` R package [@king2025]
+-   We use an implementation of standardization and decomposition [@dasguptaStandardizationDecompositionRates1993] as implemented in the `{dasguptr}` R package [@king2025]
 
 
 
