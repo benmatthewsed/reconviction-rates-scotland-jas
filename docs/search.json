@@ -921,7 +921,7 @@
     "href": "index.html#method",
     "title": "Why is Scotland’s reconviction rate falling?",
     "section": "Method",
-    "text": "Method\n\nThe Das Gupta (1993) approach to standardization and decomposition calculates what the reconviction rate ‘would have been’ in each comparison year if each year had the average demographic composition\nThe differences between these ‘standardized’ rates to the observed rates are then used to calculate how much of the change in the observed rate is due to changes in the underlying reconviction rates for each age group, and how much is due to the change in the mix of the age groups\nWe use an implementation of standardization and decomposition (Das Gupta 1993) and implemented in the {dasguptr} R package (King and Matthews 2025)"
+    "text": "Method\n\nThe Das Gupta (1993) approach to standardization and decomposition calculates what the reconviction rate ‘would have been’ in each comparison year if each year had the average demographic composition\nThe differences between these ‘standardized’ rates to the observed rates are then used to calculate how much of the change in the observed rate is due to changes in the underlying reconviction rates for each age group, and how much is due to the change in the mix of the age groups\nWe use an implementation of standardization and decomposition (Das Gupta 1993) as implemented in the {dasguptr} R package (King and Matthews 2025)"
   },
   {
     "objectID": "index.html#results-1",
