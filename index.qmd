@@ -220,7 +220,6 @@ Sex is "generally based on how a person presents and is recorded when a personâ€
 -   We use an implementation of standardization and decomposition [@dasguptaStandardizationDecompositionRates1993] as implemented in the `{dasguptr}` R package [@king2025]
 
 
-
 # Results {background-color="#006938"}
 
 ## Trends in reconviciton rate by age group
