@@ -21,7 +21,7 @@ bibliography: references.bib
 
 -   There has been a big change in the demographics of people being convicted in Scotland over the past ~25 years
 -   Changing demographics complicates comparisons in the aggregate reconviction rate over time
--   The overall change in the reconvictions rate in Scotland is partly due to less reconvictions and partly due to changing demographics
+-   The overall change in the reconvictions rate in Scotland is partly due to fewer reconvictions and partly due to changing demographics
 -   This creates statistical bias in the aggregate reconviction rate if it's used as a measure of 'effectiveness' of the justice system, an example of a statistical phenomenon known as the 'amalgamation paradox'
 
 
@@ -90,7 +90,7 @@ overall_reconv |>
        x = "Reconviction cohort",
        colour = "Age",
        fill = "Age",
-       caption = "Grey ribbon are 50%, 80% and 95% binomial confidence intervals calculated with a Wilson correction") +
+       caption = "Grey ribbons are 50%, 80% and 95% binomial confidence intervals calculated with a Wilson correction") +
   theme(axis.text.x = element_text(angle = 45, hjust=1))
 
 ```
@@ -173,7 +173,7 @@ n_plot + prop_plot
 
 ## The anatomy of a rate
 
--   To use reconviction rates as measures of criminal justice system 'performance' you only want to measure change in the subgroup rates
+-   To use reconviction rates as measures of criminal justice system 'performance' for anything post-conviction you only want to measure change in the subgroup rates
 -   But change in the overall rate can come from either changes in the subgroup rates *or changes in the relative subgroup sizes*
 
 > "If the target for a reduction in the overall reconviction rate is met, and this is mainly due to more people with a lower likelihood of re-offending being brought into the criminal justice system and being convicted, rather than through a reduction in rates of re-offending among those who would normally be brought into the system, this would bring little cause for celebration." [@kirkwood2008, p9]
@@ -196,7 +196,7 @@ smaller: false
 
 -   There is nothing particularly special about these time points, and the same approach would work for other time periods and other characteristics
 
--   Some evidence that Scotland might be an extreme case here with larger demographic changes than in other countries [@matthews2023]
+-   Some evidence that Scotland might be an extreme case here with larger demographic changes in criminal convictions than in other countries [@matthews2023]
 
 ## Measures
 
@@ -223,7 +223,7 @@ Sex is "generally based on how a person presents and is recorded when a personâ€
 
 # Results {background-color="#006938"}
 
-## Change in reconviciton rate by age group
+## Trends in reconviciton rate by age group
 
 ```{r}
 reconvs_all <- 
@@ -274,7 +274,7 @@ age_res |>
 
 ```
 
-## Changing demographic mix
+## Standardized reconviction rates
 
 ```{r}
 
@@ -369,8 +369,8 @@ first_last_decomp |>
 ## Analysis
 
 -   The dramatic changes in the demographics of people involved in the justice system that we have seen in Scotland distorts simple comparisons over time in aggregate performance measures such as the reconviction rate, because the people who made up reconviction cohorts in the late 1990s have a very different demographic profile to those who make up reconvictions cohorts in the mid 2020s
--   Young people used to have the highest reconviction rate of all age groups, but this is has fallen
--   Those over 40 have consistently lower reconviction rates, but these have not fallen
+-   Young people used to have the highest reconviction rate of all age groups, but these rates have fallen
+-   Those over 40 have consistently lower reconviction rates, but these rates have not fallen
 -   Young people also used to make up *more* of the reconviction cohorts
 -   In terms of the overall reconviction rate, a group of people with high levels of reconviction have been replaced by people with lower levels of reconviction
 
@@ -412,9 +412,9 @@ first_last_decomp |>
 
 ## Reconviction rates for each group
 
--   Having ten rather than one performance measure goes against logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an 'objective' and apolitical measure [@porter1996]
+-   Having ten performance measures rather than one performance measure goes against logic of quantification - the whole point is to reduce the amount of information required to understand the thing you care about and have an 'objective' and apolitical measure [@porter1996]
 -   Requiring reconviction rates for pre-defined population groups raises the question of which groups would make the cut, and how they would be defined
--   This is the paradoxical bit of Simpson's paradox - the hard part is identifying the subgroups you need to stratify by [@pearl2014]; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical
+-   This is the paradoxical bit of Simpson's paradox; it is paradoxical because you need to choose what story to tell about the data, not because of anything inherently statistical [@pearl2014]
 
 ## "Following consultation with key users"
 
