@@ -165,7 +165,7 @@ n_plot + prop_plot
 
 -   However, "differences in the offending related characteristics of those included in each cohort make comparing reoffending rates problematic, across both time and jurisdictions." [@browne2024, p19]
 
--   We can think of the overall reconviction rate as a *weighted* mean of the reconviction rates in different demographic groups, weighted by the group size. You can have changes in the rate due to changes in the means or changes in the rates.
+-   We can think of the overall reconviction rate as a *weighted* mean of the reconviction rates in different demographic groups, weighted by the group size. You can have changes in the overall rate due to changes in the *weights* or changes in the rates.
 
 -   This is known as the amalgamation paradox [@good1987] or Simpson's [-@simpson1951] paradox
 

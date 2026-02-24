@@ -203,7 +203,7 @@ Ben Matthews, Josiah King and Jamie Buchan
 <h2>But it’s not so simple</h2>
 <ul>
 <li><p>However, “differences in the offending related characteristics of those included in each cohort make comparing reoffending rates problematic, across both time and jurisdictions.” <span class="citation" data-cites="browne2024">(<a href="#/references" role="doc-biblioref" onclick="">Browne 2024, p19</a>)</span></p></li>
-<li><p>We can think of the overall reconviction rate as a <em>weighted</em> mean of the reconviction rates in different demographic groups, weighted by the group size. You can have changes in the rate due to changes in the means or changes in the rates.</p></li>
+<li><p>We can think of the overall reconviction rate as a <em>weighted</em> mean of the reconviction rates in different demographic groups, weighted by the group size. You can have changes in the overall rate due to changes in the <em>weights</em> or changes in the rates.</p></li>
 <li><p>This is known as the amalgamation paradox <span class="citation" data-cites="good1987">(<a href="#/references" role="doc-biblioref" onclick="">Good and Mittal 1987</a>)</span> or Simpson’s <span class="citation" data-cites="simpson1951">(<a href="#/references" role="doc-biblioref" onclick="">1951</a>)</span> paradox</p></li>
 <li><p>Because of changes in the distribution of characteristics of the people who have been convicted change in the overall reconviction rate can be biased. The overall change we see will be both due to changes in the prevalence of reconviction amongst demographic groups, but also the mix/composition of those groups who are in each reconviction cohort.</p></li>
 </ul>
@@ -281,23 +281,23 @@ Ben Matthews, Josiah King and Jamie Buchan
 <h2>How much change in the reconviction rate is due to demographic mix?</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="kxijtwlkww" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kxijtwlkww table {
+<div id="zjnyjyfova" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zjnyjyfova table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kxijtwlkww thead, #kxijtwlkww tbody, #kxijtwlkww tfoot, #kxijtwlkww tr, #kxijtwlkww td, #kxijtwlkww th {
+#zjnyjyfova thead, #zjnyjyfova tbody, #zjnyjyfova tfoot, #zjnyjyfova tr, #zjnyjyfova td, #zjnyjyfova th {
   border-style: none;
 }
 
-#kxijtwlkww p {
+#zjnyjyfova p {
   margin: 0;
   padding: 0;
 }
 
-#kxijtwlkww .gt_table {
+#zjnyjyfova .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -323,12 +323,12 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-left-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_caption {
+#zjnyjyfova .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kxijtwlkww .gt_title {
+#zjnyjyfova .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -340,7 +340,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-width: 0;
 }
 
-#kxijtwlkww .gt_subtitle {
+#zjnyjyfova .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -352,7 +352,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-top-width: 0;
 }
 
-#kxijtwlkww .gt_heading {
+#zjnyjyfova .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -364,13 +364,13 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_bottom_border {
+#zjnyjyfova .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_col_headings {
+#zjnyjyfova .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -385,7 +385,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_col_heading {
+#zjnyjyfova .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -405,7 +405,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   overflow-x: hidden;
 }
 
-#kxijtwlkww .gt_column_spanner_outer {
+#zjnyjyfova .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -417,15 +417,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 4px;
 }
 
-#kxijtwlkww .gt_column_spanner_outer:first-child {
+#zjnyjyfova .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kxijtwlkww .gt_column_spanner_outer:last-child {
+#zjnyjyfova .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kxijtwlkww .gt_column_spanner {
+#zjnyjyfova .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -437,11 +437,11 @@ Ben Matthews, Josiah King and Jamie Buchan
   width: 100%;
 }
 
-#kxijtwlkww .gt_spanner_row {
+#zjnyjyfova .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kxijtwlkww .gt_group_heading {
+#zjnyjyfova .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -467,7 +467,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   text-align: left;
 }
 
-#kxijtwlkww .gt_empty_group_heading {
+#zjnyjyfova .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -482,15 +482,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   vertical-align: middle;
 }
 
-#kxijtwlkww .gt_from_md > :first-child {
+#zjnyjyfova .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kxijtwlkww .gt_from_md > :last-child {
+#zjnyjyfova .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kxijtwlkww .gt_row {
+#zjnyjyfova .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -509,7 +509,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   overflow-x: hidden;
 }
 
-#kxijtwlkww .gt_stub {
+#zjnyjyfova .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -522,7 +522,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#kxijtwlkww .gt_stub_row_group {
+#zjnyjyfova .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -536,15 +536,15 @@ Ben Matthews, Josiah King and Jamie Buchan
   vertical-align: top;
 }
 
-#kxijtwlkww .gt_row_group_first td {
+#zjnyjyfova .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kxijtwlkww .gt_row_group_first th {
+#zjnyjyfova .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kxijtwlkww .gt_summary_row {
+#zjnyjyfova .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -554,16 +554,16 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#kxijtwlkww .gt_first_summary_row {
+#zjnyjyfova .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_first_summary_row.thick {
+#zjnyjyfova .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kxijtwlkww .gt_last_summary_row {
+#zjnyjyfova .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -573,7 +573,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_grand_summary_row {
+#zjnyjyfova .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -583,7 +583,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#kxijtwlkww .gt_first_grand_summary_row {
+#zjnyjyfova .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -593,7 +593,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-top-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_last_grand_summary_row_top {
+#zjnyjyfova .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -603,11 +603,11 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_striped {
+#zjnyjyfova .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kxijtwlkww .gt_table_body {
+#zjnyjyfova .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -616,7 +616,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-bottom-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_footnotes {
+#zjnyjyfova .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -630,7 +630,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_footnote {
+#zjnyjyfova .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -639,7 +639,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#kxijtwlkww .gt_sourcenotes {
+#zjnyjyfova .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -653,7 +653,7 @@ Ben Matthews, Josiah King and Jamie Buchan
   border-right-color: #D3D3D3;
 }
 
-#kxijtwlkww .gt_sourcenote {
+#zjnyjyfova .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -661,72 +661,72 @@ Ben Matthews, Josiah King and Jamie Buchan
   padding-right: 5px;
 }
 
-#kxijtwlkww .gt_left {
+#zjnyjyfova .gt_left {
   text-align: left;
 }
 
-#kxijtwlkww .gt_center {
+#zjnyjyfova .gt_center {
   text-align: center;
 }
 
-#kxijtwlkww .gt_right {
+#zjnyjyfova .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kxijtwlkww .gt_font_normal {
+#zjnyjyfova .gt_font_normal {
   font-weight: normal;
 }
 
-#kxijtwlkww .gt_font_bold {
+#zjnyjyfova .gt_font_bold {
   font-weight: bold;
 }
 
-#kxijtwlkww .gt_font_italic {
+#zjnyjyfova .gt_font_italic {
   font-style: italic;
 }
 
-#kxijtwlkww .gt_super {
+#zjnyjyfova .gt_super {
   font-size: 65%;
 }
 
-#kxijtwlkww .gt_footnote_marks {
+#zjnyjyfova .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kxijtwlkww .gt_asterisk {
+#zjnyjyfova .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kxijtwlkww .gt_indent_1 {
+#zjnyjyfova .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kxijtwlkww .gt_indent_2 {
+#zjnyjyfova .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kxijtwlkww .gt_indent_3 {
+#zjnyjyfova .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kxijtwlkww .gt_indent_4 {
+#zjnyjyfova .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kxijtwlkww .gt_indent_5 {
+#zjnyjyfova .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kxijtwlkww .katex-display {
+#zjnyjyfova .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kxijtwlkww div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zjnyjyfova div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
